@@ -16,8 +16,9 @@ print(os.access('/usr/share/tesseract/tessdata', os.R_OK))
 
 config = '--tessdata-dir "/usr/share/tesseract/tessdata"'
 os.environ['TESSDATA_PREFIX'] = '/usr/share/tesseract/tessdata/'
-warnings.simplefilter('ignore', DecompressionBombWarning)
 pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
+
+warnings.simplefilter('ignore', DecompressionBombWarning)
 
 lang_up = 'rus'
 lang_low = 'rus+eng'
