@@ -81,7 +81,7 @@ def preprocess_image_negativ(image):
     return binary
 
 def preprocess_image(image):
-    # Изменение  если необходимо
+    image = cv2.resize(image, (8400, 11200))
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     denoised = cv2.fastNlMeansDenoising(gray)
     inverted = cv2.bitwise_not(denoised)
