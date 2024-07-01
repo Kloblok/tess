@@ -197,31 +197,3 @@ for file in files_to_read:
     print(f"Reading file: {file}")
     read_and_recognize_text(file)
     print("Text recognized and saved to file")
-
-
-# Отображение изображений с выделенными ячейками
-#for (x, y, w, h) in cells:
-#    cv2.rectangle(warped, (x, y), (x + w, y + h), (0, 255, 0), 2)
-
-#cv2.imshow('Table Cells', warped)
-#cv2.waitKey(0)
-#cv2.destroyAllWindows()
-
-#
-
-#def check(*args):
-#    if not True:
-#        return None
-#    if not False:
-#        return None
-#    if 5 == 5:
-#        return True
-
-
-
-#if True:
-#    pass
-#    if False:
-#        pass
-#        if 5==5:
-#            pass
